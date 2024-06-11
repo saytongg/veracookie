@@ -1,0 +1,7 @@
+build/
+node_modules/
+.dockerignore
+.gitignore
+Dockerfile
+pnpm-lock.yaml
+README.md

@@ -1,0 +1,1 @@
+This serves as the client interface (frontend) for VeraCookie.
