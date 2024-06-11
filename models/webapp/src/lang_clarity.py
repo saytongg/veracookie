@@ -7,12 +7,12 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 
 import sys
-sys.path.append(".")
+sys.path.append("..")
 from const import LANG_CLARITY_MODEL_PATH, VECTORIZER_PATH
 
 def load_model() -> [RandomForestClassifier, TfidfVectorizer]:
-    model = joblib.load(LANG_CLARITY_MODEL_PATH[1:])
-    vectorizer = joblib.load(VECTORIZER_PATH[1:])
+    model = joblib.load(LANG_CLARITY_MODEL_PATH)
+    vectorizer = joblib.load(VECTORIZER_PATH)
     
     return [model, vectorizer]
 

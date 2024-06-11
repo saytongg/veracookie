@@ -8,7 +8,7 @@ from torchvision import transforms
 from transformers import ViTModel, ViTConfig
 
 import sys
-sys.path.append(".")
+sys.path.append("..")
 from const import OPT_WEIGHTS_MODEL_PATH
 
 class ViT(nn.Module):
@@ -31,7 +31,7 @@ class ViT(nn.Module):
 def load_model() -> nn.Module:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = ViT().to(device)
-    model.load_state_dict(torch.load(OPT_WEIGHTS_MODEL_PATH[1:], map_location = device))
+    model.load_state_dict(torch.load(OPT_WEIGHTS_MODEL_PATH, map_location = device))
     model.eval()
 
     return model
