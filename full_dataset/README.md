@@ -1,0 +1,2 @@
+# About
+This folder contains all the data gathered by the proponents for this project. A list of websites with cookie banners is provided in `websites_with_cookie_banners.csv`. For each site listed, the CSV specifies the cookie banner text and whether the banner image is detected. The proponents believe this data will be valuable for future research aimed at improving cookie banner extraction algorithms. Cookie banners that are detected are saved in `cookie_banner_images_full` and is organized based on the layout and styling of the options present on the cookie banner. 
