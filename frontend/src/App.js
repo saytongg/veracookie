@@ -18,8 +18,7 @@ const App = () => {
     const form = new FormData();
     form.append("link", url.trim().toLowerCase());
 
-    const backend = "http://localhost:8080/analyze";
-    let data = null;
+    const backend = process.env.REACT_APP_BACKEND_URL;
 
     try {
       const response = await fetch(backend, {
@@ -28,14 +27,15 @@ const App = () => {
         "body": form
       });
 
-      data = response.ok ? await response.json() : { "message" : `${await response.text()}` };
+      let data = response.ok ? await response.json() : { "message" : `${await response.text()}` };
+
+      setLoading(false);
+      setData(data);
     }
     catch (error) {
-      data = { "message": error.message };
+      setLoading(false);
+      setData( { "message": error.message } );
     }
-
-    setLoading(false);
-    setData(data);
   };
 
   return (
