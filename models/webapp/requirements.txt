@@ -1,8 +1,0 @@
-nltk
-scikit-learn==1.2.2
-torch
-torchvision
-transformers
-pillow
-joblib
-flask

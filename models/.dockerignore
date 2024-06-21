@@ -1,9 +1,0 @@
-__pycache__/
-datatset/
-models-wsg/
-training/
-webapp/instance/
-.dockerignore
-.gitignore
-Dockerfile
-README.md
