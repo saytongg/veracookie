@@ -1,0 +1,11 @@
+pandas
+nltk
+scikit-learn==1.2.2
+torch
+torchvision
+transformers
+datasets
+pillow
+joblib
+matplotlib
+PyQt5

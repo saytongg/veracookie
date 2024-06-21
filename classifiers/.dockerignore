@@ -1,0 +1,9 @@
+__pycache__/
+classifiers/
+datatset/
+training/
+webapp/instance/
+.dockerignore
+.gitignore
+Dockerfile
+README.md
